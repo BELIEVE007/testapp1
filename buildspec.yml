@@ -18,10 +18,10 @@ phases:
       - ng build --prod
   post_build:
     commands:
-      - mv appspec.yml ./dist/myApp
-      - mv scripts ./dist/myApp
+      - mv appspec.yml ./dist/myapp1
+      - mv scripts ./dist/myapp1
 artifacts:
   files:
     - "**/*"
   discard-paths: no
-  base-directory: dist/myApp
+  base-directory: dist/myapp1
